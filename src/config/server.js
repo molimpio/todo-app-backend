@@ -6,6 +6,4 @@ const server = express()
 server.use(bodyParser.urlencoded({ extended: true}))
 server.use(bodyParser.json())
 
-server.listen(port, function() {
-    console.log(`Backend running port ${port}`)
-})
+server.listen(port, () => console.log(`Backend running port ${port}`))
